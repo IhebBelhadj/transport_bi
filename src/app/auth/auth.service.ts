@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
+import userData from './users.json';
+
 
 @Injectable({
     providedIn: 'root'
@@ -23,24 +25,16 @@ export class AuthService {
     }
 
     login(username: string, password: string): any {
-        console.log(username, password);
-        if (username === 'admin' && password === 'admin') {
-            this.userSubject.next({
-                username: username,
-                password: password
-            });
-            localStorage.setItem('user', JSON.stringify({
-                username: username,
-                password: password
-            }));
-            this.userSubject.next({
-                username: username,
-                token: '123456789'
-            });
-            return {
-                username: username,
+        const user = userData.find(u => u.username === username && u.password === password);
+        if (user) {
+            const userData = {
+                username: user.username,
+                role: user.role,
                 token: '123456789'
             };
+            this.userSubject.next(userData);
+            localStorage.setItem('user', JSON.stringify(userData));
+            return userData;
         } else {
             return false;
         }
