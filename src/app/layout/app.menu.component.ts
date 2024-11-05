@@ -15,22 +15,27 @@ export class AppMenuComponent implements OnInit {
         {
             label: "Engagement client 1",
             routerLink: ['/dashboard/engagement-client-1'],
-            role: 'AGR'
+            role: 'DM'
+        },
+        {
+            label: "Engagement client 2",
+            routerLink: ['/dashboard/engagement-client-2'],
+            role: 'RSC'
         },
         {
             label: "Analyse fidelite",
             routerLink: ['/dashboard/analyse-fidelite'],
-            role: 'AGR'
+            role: 'RF'
         },
         {
             label: "Analyse fidelite 2",
             routerLink: ['/dashboard/analyse-fidelite-2'],
-            role: 'AGR'
+            role: 'DV'
         },
         {
             label: "Apercu des annulations",
             routerLink: ['/dashboard/apercu-annulations'],
-            role: ''
+            role: 'RSC'
         },
         {
             label: "Cout1",

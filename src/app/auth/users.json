@@ -26,8 +26,8 @@
     {
         "username": "guest5",
         "password": "guest123",
-        "role": "AGR",
-        "role_name": "Analyste Gestion de risque"
+        "role": "RPR",
+        "role_name": "Responsable Programme Recomponses"
     },
     {
         "username": "guest6",

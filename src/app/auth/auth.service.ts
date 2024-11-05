@@ -30,6 +30,7 @@ export class AuthService {
             const userData = {
                 username: user.username,
                 role: user.role,
+                roleName: user.role_name,
                 token: '123456789'
             };
             this.userSubject.next(userData);
