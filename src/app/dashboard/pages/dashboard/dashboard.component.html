@@ -1,1 +1,12 @@
-<p>dashboard works!</p>
+<div *ngIf="showNoSelection" class="center-message">
+    <p>No dashboard selected</p>
+    <!-- Replace with your icon for "no selection" -->
+</div>
+
+<div *ngIf="showInvalidId" class="center-message">
+    <p>Invalid ID</p>
+    <!-- Replace with your icon for "wrong id" -->
+</div>
+
+<iframe *ngIf="iframeUrl" title="Dashboard" class="webFrame" [src]="iframeUrl" frameborder="0"
+    allowFullScreen="true"></iframe>

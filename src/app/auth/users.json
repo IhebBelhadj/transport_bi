@@ -1,22 +1,44 @@
 [
     {
-        "username": "admin",
-        "password": "admin",
-        "role": "administrator"
-    },
-    {
-        "username": "user",
-        "password": "user123",
-        "role": "user"
-    },
-    {
-        "username": "manager",
-        "password": "manager123",
-        "role": "manager"
-    },
-    {
-        "username": "guest",
+        "username": "guest1",
         "password": "guest123",
-        "role": "guest"
+        "role": "AGR",
+        "role_name": "Analyste Gestion de risque"
+    },
+    {
+        "username": "guest2",
+        "password": "guest123",
+        "role": "RF",
+        "role_name": "Responsable de la fidelization"
+    },
+    {
+        "username": "guest3",
+        "password": "guest123",
+        "role": "DM",
+        "role_name": "Directeur Marketing"
+    },
+    {
+        "username": "guest4",
+        "password": "guest123",
+        "role": "RPR",
+        "role_name": "Responsable Programme Marketing"
+    },
+    {
+        "username": "guest5",
+        "password": "guest123",
+        "role": "AGR",
+        "role_name": "Analyste Gestion de risque"
+    },
+    {
+        "username": "guest6",
+        "password": "guest123",
+        "role": "RSC",
+        "role_name": "Responsable Satisfaction Client"
+    },
+    {
+        "username": "guest7",
+        "password": "guest123",
+        "role": "DV",
+        "role_name": "Directeur Vente"
     }
 ]

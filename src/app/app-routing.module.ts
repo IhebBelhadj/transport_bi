@@ -11,7 +11,8 @@ import { AuthGuard, LoginGuard } from './auth/auth.guard';
                 path: '', component: AppLayoutComponent,
                 canActivate: [AuthGuard],
                 children: [
-                    { path: '', loadComponent: () => import('./dashboard/pages/dashboard/dashboard.component').then(m => m.DashboardComponent) },
+                    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+                    { path: 'dashboard/:id', loadComponent: () => import('./dashboard/pages/dashboard/dashboard.component').then(m => m.DashboardComponent) },
                 ]
             },
             { path: 'login', canActivate: [LoginGuard], loadComponent: () => import('./login/login.component').then(c => c.LoginComponent) },
